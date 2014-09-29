@@ -1,0 +1,43 @@
+section#container p {
+	font-family: serif;
+	font-size: 1.5em;
+	text-align: left;
+	text-indent: .5in;
+	width: 70%;
+	margin: 0 auto;
+	padding: .75em 0;
+	clear: both;
+}
+section#container .code {
+	clear: both;
+	display: block;				
+	background: #dd8231;
+	color: #000;
+	margin: 0 auto;
+	font-size: 1.75em;
+	font-family: 'Consolas', 'Courier New', monotype;
+	overflow-y: auto;
+	padding: 0 .5em;
+	box-shadow: 0 1em 2em -1em #000 inset, 0 -1em 2em -1em #000 inset;
+}
+section#container .code pre {
+	display: inline-block;
+	text-align: left;
+	padding: 1em 0;
+}
+section#container h4 {
+	padding: .5em;
+	width: 50%;
+	font-size: 1.75em;
+	margin: .25em 0;
+	background-color: #1a3f92;
+	color: #fff;
+	border-width: .2em 0 .2em .2em;
+	border-style: double;
+	border-radius: 1em 0 0 1em;
+	text-shadow: 2px 2px 1px rgba(0,0,0,.5);
+	box-shadow:.15em .15em .3em rgba(0,0,0,.5);
+	font-weight: bold;
+	font-variant: small-caps;
+	float: right;				
+}

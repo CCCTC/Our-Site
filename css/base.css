@@ -1,0 +1,268 @@
+*, *::before, *::after {
+	color: inherit;
+	text-decoration: inherit;
+	font-family: 'Verdana', 'Gill Sans MT', 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+body {
+	overflow-x: hide;
+}
+header {
+	background: linear-gradient(to left, #002EB8, #0066FF, #002EB8);
+	font-size: 2em;
+	text-align: center;
+	padding: .1em .1em .1em .1em;
+	margin: 0 0 0 8.5em;
+	color: #fff;
+	font-family: 'Georgia', 'Times New Roman', serif;
+}
+header h1::before {
+	content: 'Career & Tech';
+	font-size: .5em;
+	line-height: 1em;
+	display: block;
+	font-family: 'Georgia', 'Times New Roman', serif;
+}
+header h1 {
+	line-height: 1em;
+	font-size: 2em;
+	font-family: 'Georgia', 'Times New Roman', serif;
+	text-align: center;
+}
+header h2 {
+	font-family: 'Felix Titling', 'Engravers MT', serif;
+	text-transform: uppercase;
+	/*letter-spacing: .25em;*/
+	margin: 1em 0 0 0;
+	text-align: center;
+}
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	padding: 5em 0 0 0;
+	width: 15%;
+	min-width: 8.5em;
+	font-size: 2em;
+	background-color: rgba(0,0,0, .6);
+	background-image: url('../images/logo.png');
+	background-size: 60% auto;
+	background-repeat: no-repeat;
+	background-position: center 1%;
+	color: white;
+}
+nav ol {
+	padding:  .1em;
+	list-style: decimal inside;
+}
+nav li, nav a {
+	font-size: .75em;
+	position: relative;
+	padding: .2em;
+}
+nav a {
+	display: block;
+}
+nav li a {
+	font-size: 1em;
+	padding: initial;
+	display: initial;
+}
+
+nav li * {
+	position: absolute;
+	display: none;
+	left: 100%;
+	top: 0;
+	background-color: #FF9966;
+	color: black;
+}
+nav li:hover {
+	background-color: #FF9966;
+	box-shadow: .2em .1em .2em rgba(0, 0, 0, .5) inset;
+	color: black;
+}
+nav li:hover * {
+	display: list-item;
+}
+nav li:hover ol {
+	min-width: 13em;
+	display: block;
+	list-style: upper-roman inside;
+	box-shadow: -.2em .1em .2em rgba(0, 0, 0, .5) inset;
+}
+nav li li *, nav li li, nav li li:hover{
+	position: static;
+	margin: 0 0 0 1em;
+	box-shadow: initial;
+	background-color: initial;
+}
+.generic, .generic:hover {
+	list-style-type: none;
+	float: left;
+	font-size: .5em;
+	margin: 0 1em;
+}
+
+section#container {
+	padding: 1em 0em 1em 20em;
+	text-align: center;
+	overflow-x: hidden;
+}
+section#container h3 {
+	font-size: 3em;
+	margin: .5em 0;
+	font-family: 'Gill Sans MT', 'Arial', 'Helvetica', sans-serif;
+	color: #dd8231;
+	text-align: center;
+}
+#backBtn {
+	display: none;
+}
+
+/*For tablet and small screen users*/
+
+@media (max-width: 975px) {
+	header {
+		font-size: 1.2em;
+		margin-left: 10.4em;
+	}
+	header h1::before {
+		font-size: .6em;
+		line-height: 1em;
+	}
+	header h1 {
+		line-height: 1em;
+		font-size: 2em;
+		text-align: center;
+	}
+	nav {
+		padding: 5em 0 0 0;
+		width: 10%;
+		min-width: 7.15em;
+		font-size: 1.75em;
+		background-size: 70% auto;
+	}
+	nav ol {
+		padding:  .1em;
+		list-style: decimal inside;
+	}
+	nav li, nav a {
+		font-size: .75em;
+		position: relative;
+		padding: .2em;
+	}
+	nav a {
+		display: block;
+	}
+	nav li a {
+		font-size: 1em;
+		padding: initial;
+		display: initial;
+	}
+	nav li * {
+		position: absolute;
+		display: none;
+		left: 100%;
+		top: 0;
+	}
+	nav li li *, nav li li, nav li li:hover{
+		position: static;
+		margin: 0 0 0 1em;
+		box-shadow: initial;
+		background-color: initial;
+	}
+	section#container {
+		padding: 1em 0em 1em 13em;
+	}
+	section#container h3 {
+		font-size: 2.2em;
+	}
+}
+
+@media (max-width: 650px) {
+	header {
+		font-size: 1em;
+		margin-left: 0;
+	}
+	nav {
+		position: fixed;
+		top: 90%;
+		left: 88%;
+		width: 25px;
+		height: 10%;
+		padding: .5%;
+		background-size: auto 100%;
+		background-position: top left;
+		background-image: initial;
+	}
+	nav li, nav a {
+		display: none;
+	}
+	nav:hover {
+		margin-left: 0;
+		position: fixed;
+		top: 10%;
+		right: 0;
+		left: 0;
+		height: initial;
+		background-size: 20% auto;
+		background-position: top right;
+		width: 100%;
+		overflow-y: auto;
+		overflow-x: hidden;
+		background-image: url('../images/logo.png');
+	}
+	#backBtn {
+		display: block;
+		font-size: 1em;
+	}
+	nav:hover li, nav:hover a {
+		display: inherit;
+	}
+	nav li * {
+	position: static;
+	display: none;
+	left: 0;
+	top: 0;
+	background-color: #FF9966;
+	color: black;
+	z-index: 10;
+	}
+	nav li:hover:first-child {
+		margin-top: 1em;
+	}
+	nav li:hover {
+		background-color: #FF9966;
+		box-shadow: .2em .1em .2em rgba(0, 0, 0, .5) inset;
+		color: black;
+	}
+	nav li:hover * {
+		display: list-item;
+	}
+	nav li:hover ol {
+		display: block;
+		list-style: upper-roman inside;
+		box-shadow: none;
+	}
+	nav li li *, nav li li, nav li li:hover{
+		position: static;
+		margin: 0 0 0 1em;
+		box-shadow: initial;
+		background-color: initial;
+	}
+	.generic, .generic:hover {
+		list-style-type: none;
+		float: none;
+		font-size: .75em;
+		margin: 0 1em;
+	}
+	section#container {
+		padding: 0;
+	}
+	section#container ol li{
+		padding: 0;
+	}
+}

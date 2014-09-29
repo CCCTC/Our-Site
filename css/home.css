@@ -1,0 +1,92 @@
+section#container #today-agenda {
+	width: 100%;
+	background-color: #EEEEFF;
+	background-image: url('../images/Jackdaw2_.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 65% auto;
+	background-position: left -60%;
+	box-shadow: inset 0 0 1em rgba(0, 0, 0, .5);
+	text-align: right;
+	color: white;
+	font-size: 2em;
+	border: 1em solid rgba(0, 0, 0, .8);
+	box-sizing: border-box;
+	margin-right: 0;
+}
+section#container #today-agenda h4 {
+	background-color: rgba(0, 0, 0, .8);
+	width: 51%;
+	text-align: center;
+	display: inline-block;
+	font-size: 1.5em;
+	font-variant: small-caps;
+	color: #dd8231;
+}
+section#container #today-agenda ul {
+	list-style: inside;
+	width: 51%;
+	text-align: left;
+	display: inline-block;
+	clear: both;
+	padding: 0 2em;
+	background-color: rgba(0, 0, 0, .8);
+	box-sizing: border-box;
+}
+section#container #today-agenda ul li {
+	margin: 0 0 1em;
+}
+section#container .day {
+	width: 20%;
+	min-width: 7em;
+	padding: .75em .25em;
+	display: inline-block;
+	margin: .25em 1%;
+	color: #fff;
+	background-color: rgba(0, 0, 0, .8);
+	font-size: 1em;
+}
+
+section#container .day h4 {
+	font-size: 2em;
+	padding: .2em;
+	color: #dd8231;
+	font-variant: small-caps;
+}
+
+section#container .day ul {
+	text-align: left;
+	list-style: inside;
+}
+section#container .day li {
+	margin: 0 2% .25em;
+}
+
+@media (max-width: 975px) {
+	section#container #today-agenda h4 {
+		font-size: 1em;
+	}
+	section#container #today-agenda ul li {
+		font-size: .7em;
+	}
+}
+
+@media (max-width: 600px) {
+	section#container #today-agenda {
+		box-shadow: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		margin: 0 auto;
+		width: 95%;
+	}
+	section#container #today-agenda h4 {
+		width: 100%;
+		text-align: left;
+		padding: 0em 1em 0em 1em;
+		box-sizing: border-box;
+	}
+	section#container #today-agenda ul {
+		width: 100%;
+		padding: 1em 1em 0em 1em;
+	}
+}
