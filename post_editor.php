@@ -1,4 +1,4 @@
-<?php include("includes/db_connect.php"); ?>
+<?php include("Do_not_upload/db_connect.php"); ?>
 
 <!DOCTYPE html>
 <html>
