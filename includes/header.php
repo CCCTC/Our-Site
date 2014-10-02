@@ -30,12 +30,7 @@ foreach($my_db_rows as $row){
 				echo "<li class='generic'>Videos</li>\n";
 			echo "</ol>\n";
 	echo "</li>\n";
-	$get_other_rows = 0;
-	$my_other_db_rows = 0;
 }
-
-$get_rows = 0;
-$my_db_rows = 0;
 
 ?><!--
 				<li>
